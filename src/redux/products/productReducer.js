@@ -27,7 +27,7 @@ const productReducer = (state = initialState, action) => {
                         quantity: product.quantity + action.payload.quantity
                     }
                 }else {
-                        return product
+                        return product;
                     }
             })
 
@@ -39,11 +39,11 @@ const productReducer = (state = initialState, action) => {
                         quantity: product.quantity - 1
                     }
                 }else {
-                        return state
+                        return product;
                     }
             })
         default:
-            return state
+            return state;
     }
 }
 export default productReducer;

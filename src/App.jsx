@@ -11,8 +11,8 @@ function App() {
 
   return (
     <Provider store={store}>
-     <Navber/>
-     <Page />
+      <Navber />
+      <Page />
     </Provider>
   )
 }

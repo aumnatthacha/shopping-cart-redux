@@ -20,7 +20,7 @@ const AddProduct = () => {
 
     return (
         <div className="formContainer">
-            <h1 className="formTitle">Create New Production</h1>
+            <h1 className="formTitle">Add Production</h1>
             <form className="space-y-4 text-[#3c1855]" onSubmit={handleSubmit(onSubmit)}>
                 <div className="space-y-2">
                     <label>Production Name</label>
