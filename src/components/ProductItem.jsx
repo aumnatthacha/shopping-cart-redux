@@ -24,7 +24,7 @@ const ProductItem = ({ product }) => {
       </figure>
       <div className='card-body'>
         <h2 className='card-title'>{name}</h2>
-        <p>If a dog chews shoes whose shoes does he choose.</p>
+        {/* <p>If a dog chews shoes whose shoes does he choose.</p> */}
 
         <div className='flex justify-between'>
           <p className='w-full'>Available {quantity}</p>
@@ -32,7 +32,7 @@ const ProductItem = ({ product }) => {
         </div>
         <div className='card-action mt-2'>
           <button className='btn btn-sm btn-primary'
-            disabled={quantity === 0}
+            disabled={quantity === 0} // ปุ่ม "Buy Now" ที่ถูกใช้งานเมื่อจำนวนสินค้า (quantity) มีค่ามากกว่า 0 ถ้า quantity เท่ากับ 0 จะถูก disable
             onClick={handleAddToCart}
           >
             Buy Now
