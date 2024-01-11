@@ -13,6 +13,7 @@ const ProductItem = ({ product }) => {
   const handleAddToCart = () => {
     dispatch(addToCart(product));
     dispatch(removeQuantity(id));
+   
   };
   return (
     <div className='card md:w-96 bg-base-100 shadow-xl'>
