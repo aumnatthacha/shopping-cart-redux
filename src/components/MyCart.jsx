@@ -2,6 +2,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import CartItem from './CartItem';
+import Bill from './Bill';
 
 const MyCart = () => {
 
@@ -19,6 +20,9 @@ const MyCart = () => {
             ) : (
               <div>No product in your cart</div>
             )}
+          </div>
+          <div className='space-y-6 md:w-1/3'>
+            <Bill />
           </div>
         </div>
       </div>
