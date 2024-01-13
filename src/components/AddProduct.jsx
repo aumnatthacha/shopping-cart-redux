@@ -19,9 +19,9 @@ const AddProduct = () => {
     };
 
     return (
-        <div className="formContainer">
+        <div className="">
             <h1 className="formTitle">Add Production</h1>
-            <form className="space-y-4 text-[#3c1855]" onSubmit={handleSubmit(onSubmit)}>
+            <form className="space-y-4 text-[#166534]" onSubmit={handleSubmit(onSubmit)}>
                 <div className="space-y-2">
                     <label>Production Name</label>
                     <input type='text' className="addProductInput" {...register("name", { required: true })} />
@@ -56,7 +56,7 @@ const AddProduct = () => {
 
                     </div>
                 </div>
-                <button type="submit" className="submit bg-indigo-600 text-white">Create Now!</button>
+                <button type="submit" className="submit bg-lime-800 text-white">Create Now!</button>
             </form>
         </div>
     )

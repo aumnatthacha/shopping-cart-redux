@@ -19,7 +19,7 @@ const ProductItem = ({ product }) => {
     <div className='card md:w-96 bg-base-100 shadow-xl'>
       <figure className='relative'>
         <img src={`${image}`} alt={`${name}`} className='h-80 w-full object-cover' />
-        <div className='badge bg-blue-500 text-white absolute top-3 right-3 py-1 px-2 rounded'>
+        <div className='badge bg-lime-800 text-white absolute top-3 right-3 py-3 px-2 rounded'>
           {category}
         </div>
       </figure>
@@ -31,8 +31,8 @@ const ProductItem = ({ product }) => {
           <p className='w-full'>Available {quantity}</p>
           <p className='text-left'>{price}฿</p>
         </div>
-        <div className='card-action mt-2'>
-          <button className='btn btn-sm btn-primary'
+        <div className='card-action mt-2 '>
+          <button className=' btn btn-block bg-lime-800 text-blue-50'
             disabled={quantity === 0} // ปุ่ม "Buy Now" ที่ถูกใช้งานเมื่อจำนวนสินค้า (quantity) มีค่ามากกว่า 0 ถ้า quantity เท่ากับ 0 จะถูก disable
             onClick={handleAddToCart}
           >

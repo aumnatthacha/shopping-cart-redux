@@ -51,7 +51,7 @@ const CartItem = ({ product }) => {
                     </div>
                     <div className="mt-4 flex justify-between sm:space-y-6 sm:mt-0 sm:block sm:space-x-6">
                         <div className="flex items-center border-gray-100">
-                            <span className="cursor-pointer rounded-l bg-gray-100 py-1 px-3.5 duration-100 hover:bg-blue-400 hover:text-blue-400"
+                            <span className="cursor-pointer rounded-l bg-gray-100 py-1 px-3.5 duration-100 hover:bg-lime-700 hover:text-black"
                                 onClick={handleDecreaseQuantity}
                             >
                                 {""} -{""}
@@ -62,7 +62,7 @@ const CartItem = ({ product }) => {
                                 value={quantity}
                                 className="h-8 w-8 border bg-white text-center text-xs outline-none"
                             />
-                            <span className="cursor-pointer rounded-l bg-gray-100 py-1 px-3.5 duration-100 hover:bg-blue-400 hover:text-blue-400"
+                            <span className="cursor-pointer rounded-l bg-gray-100 py-1 px-3.5 duration-100 hover:bg-lime-700 hover:text-black"
                                 onClick={handleIncreaseQuantity}
                             >
                                 {""} +{""}

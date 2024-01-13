@@ -40,17 +40,21 @@ const Bill = () => {
             title: "<strong>HTML <u>example</u></strong>",
             icon: "info",
             html: `
-          <img src="data:image/svg+xml;utf8, ${encodeURIComponent(svg)}"/>
-          Please use any Bank application scan this Qrcode to pay with Promptpay
-        `,
+                <div style="display: flex; justify-content: center; align-items: center; height: 300px;">
+                    <img src="data:image/svg+xml;utf8, ${encodeURIComponent(svg)}" style="width: 100%; height: 100%; object-fit: contain;" />
+                </div>
+                Please use any Bank application scan this Qrcode to pay with Promptpay
+            `,
             showCloseButton: true,
             showCancelButton: true,
             focusConfirm: false,
         });
-
     };
+    
+    
     return (
         <div className='mt-6 rounded-lg border bg-white p-6 shadow-md md:mt-0'>
+            <h2 className='text-xl font-bold'>Summarize</h2>
             <div className='mb-2 flex justify-between'>
                 <p className='text-gray-700'>Subtotal</p>
                 <p className='text-gray-700'>{subTotal}฿</p>
@@ -67,7 +71,7 @@ const Bill = () => {
                     <p className='text-sm text-gray-700'>including VAT</p>
                 </div>
             </div>
-            <button className='mt-6 w-full rounded-md bg-blue-500 py-1 5 font-medium text-blue-50 hover:bg-blue-600'
+            <button className='mt-6 w-full rounded-md bg-lime-800 py-1 5 font-medium text-blue-50 hover:bg-lime-700'
                 onClick={handleCheckOut}
             >
                 Check Out
