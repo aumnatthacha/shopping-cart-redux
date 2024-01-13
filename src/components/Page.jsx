@@ -12,7 +12,7 @@ const Page = () => {
 }
 
 export default Page
-{/* {page === 'home' ? (
+{/* {page === 'home' ? 
         <Home />
       ) : (
         <MyCart />
